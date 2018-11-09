@@ -1,7 +1,7 @@
-.babelrc
+.commitlintrc.js
+.editorconfig
+.eslintrc.js
 .gitignore
-
-quizzes
-tmp
+.prettierrc
 
 package-lock.json
