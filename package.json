@@ -1,0 +1,53 @@
+{
+  "name": "cakeq",
+  "version": "1.2.0",
+  "description": "some quizzes",
+  "main": "index.js",
+  "bin": {
+    "c": "./bin/cake-cli",
+    "cake-cli": "./bin/cake-cli"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longyiyiyu/just-fortest.git"
+  },
+  "keywords": [
+    "quiz"
+  ],
+  "author": "long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longyiyiyu/just-fortest/issues"
+  },
+  "homepage": "https://github.com/longyiyiyu/just-fortest#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "husky": "^1.1.3",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.15.1",
+    "standard-version": "^4.4.0"
+  }
+}
